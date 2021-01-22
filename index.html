@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>성춘's Portfolio</title>
+    <script src="index.js" defer></script>
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+        #to-be-part > div{
+            font-family:  'Nanum Pen Script', cursive;
+        }
+        #UP_BT{
+            font-family:  'Nanum Pen Script', cursive;
+            border: 3px solid #2F4F4F;
+            width:10px;
+            
+            padding:10px;
+            height:10px;
+        }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+      
+    />
+  </head>
+  <body id="main-part" >
+      <!--     <header>
+      <nav
+        class="pl-5 pr-5 navbar navbar-dark bg-dark position-fixed w-100"
+        style="z-index: 9; color: #006cff"
+      >
+        <a class="navbar-brand" href="#main-part">David. Moms</a>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#main-part">Main</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-part">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#language-part">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#stack-part">Stack</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#to-be-part">Closing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+ -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light position-fixed w-100 p-1 "
+        style="z-index: 9; background: black;"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#main-part">WEB_PJT</a>
+          <!-- <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          
+            <ul class="navbar-nav d-flex justify-content-end mt-auto p-2 " style="font-size:20px;" >
+              <!-- mb : margin-bottom -->
+              <li class="nav-item  ">
+                <a class="nav-link active text-white-50 " aria-current="page" href="#about-part">About</a >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="#education">education & Experience</a>
+              </li>
+
+              <li class="nav-item"> 
+                  <a class="nav-link text-white-50" href="#skill">skill </a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link text-white-50" href="#portfolio"> ADD  </a>
+            </li>
+              <li class="nav-item"> 
+                <a class="nav-link text-white-50" href="#to-be-part">End  </a>
+            </li>
+            </ul>
+          
+        </div>
+      </nav>
+
+      <div class="position-fixed text-white  " style="z-index:9;bottom:30px; right:30px;" >
+        <a class="navbar-brand text-white  bg-success" id="UP_BT" href="#main-part">UP</a>
+      </div>
+    </header>
+    <!-- 헤더  -->
+    <main>
+      <section>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+            ></li>
+            <li
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+            ></li>
+            
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item h-50">
+              <img src="images/com_desk.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item h-50 active">
+              <img src="images/key.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </section>
+        <!-- 
+         자기소개 파트 
+        -->
+      <section id="about-part" class=" p-5  " style="min-height:100vh; background-color: #2F4F4F;">
+        <div class="h1  p-4 text-white w-100 text-center " style="background-color: #2F4F4F;">About</div>
+        <div class="card rounded-pill" style="width: 18rem; margin: 0px auto; ">
+          <img src="images/1.jpg" class="card-img-top figure-img img-fluid rounded-pill"  alt="..." />
+          
+        </div>
+        <div class="text-center text-white mt-3">
+           <h3> SSAFY 5기 15반 박성춘 </h3><br>
+           <h5 class="text-white-50"> 취업해서 돈 많이 벌고 싶다</h5>
+        </div>
+        </div>
+        <ul class="list-group list-group-flush w-50 m-auto  mt-5  text-center " >
+            
+            <li class="list-group-item   text-white " style="background-color: #2F4F4F;"><img src="images/location.png" style="width:3%;height:3%;" ></img>Seoul, Korea</li>
+            <li class="list-group-item  text-white" style="background-color: #2F4F4F;"><img src="images/phone.png" style="width:3%;height:3%;" class="bg-secondary rounded" > +82-10-2724-9053</li>
+            <li class="list-group-item  text-white" style="background-color: #2F4F4F;"><img src="images/email.png" style="width:3%;height:3%;" > charie0711@gmail.com</li>
+            <li class="list-group-item  text-white" style="background-color: #2F4F4F;"><img src="images/github.png" style="width:3%;height:3%;" >
+                <a href="https://github.com/chuneeeee" style="text-decoration-line: none; text-emphasis:initial; " >chuneeeee</a></li>
+          </ul>
+      </section>
+        <!-- 
+         배운 것과 경험들 
+        -->
+      <!-- <section id="education" class="bg-dark pt-5 "
+      style="min-height:100vh">
+        
+ 
+      <div class="h1 bg-dark p-4 text-white w-100 text-center ">education & Experience</div> 
+       <ul class="list-group list-group-flush w-50 m-auto  mt-5   " >
+            
+
+      <div class="w-50 p-3 text-center text-primary mt-5" >연혁 </div>
+      <div class="w-50 p-3 text-center text-white" >2015 컴퓨터공학과 입학</div>
+      <div class="w-50 p-3 text-center text-white" >2019 첫 프로젝트</div>
+      <div class="w-50 p-3 text-center text-white" >2020 졸업 프로젝트 </div>
+      <div class="w-50 p-3 text-center text-white" >2021 졸업 </div>
+      <div class="w-50 p-3 text-center text-white" >2021 SSAFY 입과</div>
+
+      </section> -->
+      <section id="education" class="bg-dark pt-lg-5 " 
+      style="min-height:100vh; ">
+      <div class="h1 bg-dark p-4 text-white w-100 text-center ">education & Experience</div> 
+        <div class="container text-white">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="mt-5">Education</h2>
+              <ul class="list-edu m-5">
+                <li style="list-style: none;"><img src="images/cap.png" class="bg-white"style="width: 30px; " ><b> Hongik Univ.</b>, Seoul, Korea, <i>2015.03~2021.02</i><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bachelor's degree in Computer Engineering
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-white">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <h2 class="mt-3">Experience & Projects</h2>
+                <ul class="list-exp m-5 ">
+                  <li>
+                    <div class="exp-item h5 p-3" >
+                      머신러닝을 이용한 빅데이터 분석, <i>2019.03~2019.11</i><br>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <div class="exp-item h5 p-3" >
+                      GAN 을 이용한 Image Transition, <i>2020.03~2020.11</i><br>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <div class="exp-item h5 p-3" >
+                      SSAFY, <i>2021.01~</i><br>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <div class="exp-item h5 p-3 text-primary" >
+                       <i>추가예정</i><br>
+                      
+                    </div>
+                  </li>
+                </ul>
+            </div>
+          </div>
+
+    </section>
+            <!-- 
+        내가  사용할 수 있는 스킬
+            -->
+    <section id="skill" class=" pt-5" style="min-height: 100vh; background-color: #2F4F4F;">
+
+        <div class="h1  p-4 text-white-50 w-100 text-center " style=" background-color: #2F4F4F;">Skill Stack</div>
+
+
+        <!-- table layout 확장 아래나 오른쪽으로만 된다 ! -->
+
+          <table class="table w-75 mt-5 mx-auto table-dark ">
+            
+            <thead>
+              <tr>
+                  <!-- 카테고리 정해준다고 생각하면 됨 -->
+                <th scope="col">분야</th>
+                <th scope="col">분류</th>
+                <th scope="col">Stack</th>
+                <th scope="col">Level</th>
+                <th scope="col">근거</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row " rowspan="10" class="align-middle">WEB</th>
+                <!-- rowspan 은 안에있는 거 몇개 들어가는지 -->
+                <td rowspan="3" class="align-middle">Frontend</td>
+                <td >HTML/CSS</td>
+                <td>❤❤❤</td>
+                <td>웹페이지 클론 코딩 가능 </td>
+              </tr>
+              <tr>
+                <!-- <th scope="row">2</th> -->
+                <td>bootstrap</td>
+                <td>❤❤</td>
+                <td>bootstrap 기준 document 참고해서 개발 가능</td>
+              </tr>
+              <!-- <tr>
+                <td>Vue.js</td>
+                <td >❤❤❤</td>
+                <td>다양한 Web project 개발 진행</td>
+              </tr> -->
+              <tr>
+                <td>React.js</td>
+                <td >❤</td>
+                <td>다양한 Web project 개발 예정</td>
+              </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                  <th scope="row " rowspan="10" class="align-middle">AI</th>
+                  <!-- rowspan 은 안에있는 거 몇개 들어가는지 -->
+                  <td rowspan="3" class="align-middle">Framework</td>
+                  <td >Tensorflow2</td>
+                  <td>❤❤</td>
+                  <td>Document 참고하여 구현 가능  </td>
+                </tr>
+                <tr>
+                  <!-- <th scope="row">2</th> -->
+                  <td>Pytorch</td>
+                  <td>❤❤❤❤</td>
+                  <td>GAN Model 개발 경험 및 NLP Model(GRU,Attention) 개발 경험 </td>
+                </tr>
+                <tr>
+
+                    <td>SK-learn</td>
+                    <td>❤❤❤</td>
+                    <td>데이터 분석시 사용한 Tool </td>
+                </tr>
+                <!-- <tr>
+                    <td rowspan="3" class="align-middle">Environment</td>
+                    <td>Linux</td>
+                    <td>❤❤❤</td>
+                    <td> AWS 및 Azure Server 사용시 Linux 기반 Server 사용 </td>
+
+                </tr>
+                <tr>
+                    
+                    <td>Android</td>
+                    <td>❤❤❤</td>
+                    <td> AWS 및 Azure Server 사용시 Linux 기반 Server 사용 </td>
+
+                </tr> -->
+              </tbody>
+          </table>
+          <table class="table w-75 mt-5 mx-auto bg-dark text-white pt-5">
+            <thead>
+              <tr>
+                  <!-- 카테고리 정해준다고 생각하면 됨 -->
+                <th scope="col">언어</th>
+                <th scope="col">Level</th>
+                <th scope="col">근거</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>C</td>
+                <td >✔✔✔</td>
+                <td >System Call 사용하여 Linux Shell 구현 경험 </td>
+
+              </tr>
+              <tr>
+                <td>C++</td>
+                <td >✔✔✔</td>
+                <td >코딩테스트 주 언어</td>
+
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td >✔✔✔✔</td>
+                <td >진행해왔던 프로젝트의 base language</td>
+
+              </tr>
+              <tr>
+                <td>Kotlin</td>
+                <td >✔✔</td>
+                <td >Android Application 구현시 사용했던 언어</td>
+             </tr>
+             <tr>
+                <td>Javascript</td>
+                <td >✔</td>
+                <td >현재 배우는중,,</td>
+             </tr>
+            </tbody>
+            
+          </table>
+    </section>
+    <section id="portfolio" class="mt-5 pt-5 bg-dark" style="min-height:100vh">
+        <div class="h1 bg-dark p-4 mt-5 text-primary text-center">
+            Portfolio
+        </div>
+        <div class="h3 bg-dark p-4 mt-5 text-primary text-center">
+            Github 링크가 계속 추가될 예정입니다..
+        </div>
+        <ul class="list-group list-group-flush w-50 m-auto  mt-5  text-center " >
+            
+            <li class="list-group-item   text-white bg-dark" ><a href="https://github.com/chuneeeee/ARem_project" style="text-decoration: none;">ARem PJT</a></li>
+            <li class="list-group-item   text-white bg-dark" ><a href="https://github.com/chuneeeee/cartoonGAN_pytorch" style="text-decoration: none;">Graduation PJT AI MODEL</a></li>
+            <li class="list-group-item   text-white bg-dark" ><a href="https://github.com/chuneeeee/YourCartoonIs" style="text-decoration: none;">Graduation PJT Android APP</a></li>
+
+            
+          </ul>
+      </section>
+
+    </section>
+    <section id="to-be-part" class="mt-5 pt-5 bg-dark" style="min-height:100vh">
+        <div class="h1 bg-dark p-4 mt-5 text-primary text-center">
+            Closing
+        </div>
+        <div class="card bg-white text-center">
+            <img src="images/impossible.jpg" class="card-img-top w-50 mt-5 mx-auto" alt="closing image">
+            <div class="card-title h3" >불가능이란 없다고 생각하는 삶을<br> 살아가고 싶습니다.<br>
+                더 나은 개발자가 되기위해 해야하는 노력은 <br>가히 상상도 못할 정도로 힘들테지만, <br>
+                SSAFY와 함께라면 가능하다고 생각합니다.
+            </div>
+            
+        </div>
+
+
+
+
+    </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
